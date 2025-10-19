@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var b1, b2, f, hasil int
+
+	fmt.Scan(&b1)
+	fmt.Scan(&b2)
+
+	hasil = 1
+	for f = b2; f > 0; f-- {
+		hasil *= b1
+	}
+
+	fmt.Print("Hasil: ", hasil)
+}
